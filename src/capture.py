@@ -6,7 +6,12 @@ image_dir = os.path.join(BASE_DIR, "images")  # get image directory path
 # print(image_dir)
 person_id = input("Enter the Id: ")  # receive the id input
 image_dir_id = os.path.join(image_dir, person_id)  # create a path specific to the id
-os.mkdir(image_dir_id)  # create a directory in the name of id
+
+try:
+    os.mkdir(image_dir_id)  # create a directory in the name of id
+except FileExistsError:
+    print('Directory already exist')
+
 # print(image_dir_id)
 
 cam = cv2.VideoCapture(0)  # using standard web-cam as input object
@@ -29,7 +34,6 @@ while (True):
         break
     elif sampleNum > 100:   # finish execution after 100 sample pictures
         break
-
 
 cam.release()       # release the camera resource
 cv2.destroyAllWindows()
