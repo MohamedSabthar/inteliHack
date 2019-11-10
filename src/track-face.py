@@ -40,7 +40,7 @@ while (True):
         roi_color = frame[y:y + h, x:x + w]
 
         id_, conf = recognizer.predict(roi_gray)    # predict an id with confidence level
-        if 100 > conf >= 70:  # if confidence level > 70 assume the person ged mached
+        if 100 > conf >= 60:  # if confidence level > 60 assume the person ged mached
             font = cv2.FONT_HERSHEY_SIMPLEX
             student_id = labels[id_]  # get the student/person_id
             doc_ref = db.collection(u'Register').document(date.today().strftime("%d-%m-%Y"))    # get the document reference
