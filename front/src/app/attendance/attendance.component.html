@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h5>Student Attendance</h5>
+    <div class="card">
+<div class="card-main">
+        <div class="card-at">
+                Registration Number : 2017CS004
+        </div>
+        <div class="card-at">
+                Student Name : RAMESH AKSSHAR
+        </div>
+    </div>
+    <h5 style="margin-left:30px;">Classes Attended</h5>
+    <div class="row">
+        <div class="col-md-2" *ngFor="let date of index ">
+            <div class=" card-date"><strong>{{date.date}}</strong></div>
+        </div>
+    </div>
+    <div class="result">
+        <h6 style="padding:10px;border: #8c1aff solid 0.5px;border-radius: 10px;cursor: pointer;">Total Number Of Classes - {{countT}}</h6>
+        <h6 style="padding:10px;border: #8c1aff solid 0.5px;border-radius: 10px;cursor: pointer;">Number of Classes Attended - {{countA}}</h6>
+        <h6 style="padding:10px;border: #8c1aff solid 0.5px;border-radius: 10px;cursor: pointer;">Attendance Percentage - {{countA*100/countT}} %</h6>
+    </div>
+   
+
+    
+<img src="../../assets/img/front.png" style="width:100%;position: relative;">
+</div>

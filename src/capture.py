@@ -32,7 +32,7 @@ while (True):
 
     if cv2.waitKey(25) & 0xFF == ord('q'):  # delay 25 millisecond break if key 'q' pressed
         break
-    elif sampleNum > 100:   # finish execution after 100 sample pictures
+    elif sampleNum > 200:   # finish execution after 100 sample pictures
         break
 
 cam.release()       # release the camera resource

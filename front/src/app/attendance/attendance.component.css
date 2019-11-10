@@ -1,0 +1,50 @@
+.card-main{
+    padding:2rem;
+}
+
+
+
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+
+  .card-at{
+    cursor: pointer;
+    padding: 10px;
+    color: blueviolet;
+    border: blueviolet solid 0.5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width:40%;
+  }
+
+  .card-date{
+    padding: 13px;
+    text-align: center;
+    background-color: #00b359;
+    color: aliceblue;
+    border: #00b359 solid 0.5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px ;
+    width:100%;
+    cursor: pointer;
+  }
+
+  .result{
+    cursor: pointer;
+    padding: 13px;
+    background-color: #ffff;
+    color:black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px ;
+    width:25%;
+  }
